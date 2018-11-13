@@ -29,6 +29,7 @@ body{margin:0;}
 .margin-left-3{margin-left: 30px;}
 .margin-right-2{margin-right: 20px;}
 .margin-right-3{margin-right: 30px;}
+.text-left{text-align: left;}
 
 .console-title h5{float: left;}
 .adBottom button{margin-right: 10px;}
@@ -89,153 +90,16 @@ input[type="radio"] {width: 16px;height: 16px;opacity: 0;}
         }
 .radio-info.checked span {color:#0081ff;}
 
-// header  start 
-.phone-banner{
-  position: fixed;
-  top: 0;
-  z-index: 10;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: .18rem .3rem;
-  background: #fff;
-  border-bottom: solid .01rem #eaeaea;
-  .banner-logo{
-    width: .63rem;
-    height: .17rem;
-  }
-  .phone-nav{
+.index-title{
+  font-size: .3rem;
+  .dot{
     position: relative;
-    .banner-group{
-      width: .17rem;
-      height: .15rem;
-    }
-    .nav-list{
-      position: absolute;
-      list-style: none;
-      left:-3.75rem;
-      top: .4rem;
-      width: 3.75rem;
-      text-align: center;
-      box-shadow: 0 .28rem .15rem 0 rgba(0, 0, 0, 0.21);
-      background-color: #fff;
-      .nav-item{
-        padding: .16rem 0 .15rem;
-        border-bottom: solid .01rem #ededed;
-        .item-link{
-          color: #696969;
-          text-decoration: none;
-          font-size: .16rem;
-          font-weight: 500;
-        }
-      }
-      .nav-item.active{
-        .item-link{
-          color: #0b91ff;
-        }
-      }
-    }
+    top: -.2rem;
+    display: inline-block;
+    margin: 0 .018rem;
+    width: .04rem;
+    height: .04rem;
+    background: #fff;
+    transform: rotate(-45deg);
   }
 }
-// header  end
-
-// footer  start
-.phone-footer{
-  text-align: left;
-  padding: 0 .3rem;
-  font-weight: 500;
-  .footer-title{
-    margin-bottom: .04rem;
-    opacity: 0.5;
-    font-size: .12rem;
-    color: #3d3f48;
-  }
-  .footer-number{
-    display: flex;
-    align-items: center;
-    margin-bottom: .46rem;
-    height: .17rem;
-    font-size: .12rem;
-    font-weight: 500;
-    color: #b3b9c1;
-    .phone-img{
-      margin-right: .08rem;
-      width: .12rem;
-      height: .13rem;
-    }
-  }
-  .footer-right{
-    position: relative;
-    margin-bottom: .55rem;
-    margin-left: -.36rem;
-    width: 3.8rem;
-    opacity: 0.5;
-    transform: scale(0.8);
-    font-size: .1rem;
-    color: #687484;
-  }
-}
-// footer  end
-
-
-// 二级菜单及banner  start 
-.second-menu{
-  margin-top: .56rem;
-  height: .5rem;
-  font-size: .15rem;
-  font-weight: 500;
-  color: #667282;
-  border-bottom: solid .01rem #eaeaea;
-  .menu-item{
-    margin-right: .5rem;
-  }
-  .menu-item.active{color: #008bff;}
-  .menu-item:last-child{
-    margin-right: 0;
-  }
-
-}
-
-.mobile-banner{
-  padding: .3rem;
-  text-align: left;
-  background-image: linear-gradient(172deg, #9b6fff, #6c92ff);
-  color: #fff;
-  font-weight: 400;
-  .banner-title{
-    position: relative;
-    margin-top: 0;
-    margin-bottom: .18rem;
-    line-height: 1.31;
-    font-size: .26rem;
-    .banner-title-icon{
-      position: absolute;
-      top: -0.1rem;
-      right: .4rem;
-      width: .48rem;
-    }
-  }
-  .banner-content{
-    margin-bottom: .2rem;
-    font-size: .13rem;
-    line-height: 1.69;
-  }
-  .banner-content:last-child{margin-bottom: 0}
-  .banner-btn{
-    display: block;
-    margin: 0 auto .11rem;
-    width: 1.8rem;
-    height: .42rem;
-    line-height: .42rem;
-    border-radius: .04rem;
-    box-shadow: 0 .08rem .1rem 0 #4385e8;
-    border: solid .01rem #e4e4e4;
-    background-image: linear-gradient(to bottom, #ffffff, #f5f7f9);
-    font-size: .16rem;
-    font-weight: 500;
-    color: #008bff;
-  }
-}
-// 二级菜单及banner  end 
