@@ -1,12 +1,14 @@
 <template>
 
   <div class="index-section">
-    <!-- <toolbar></toolbar> -->
-    <!-- <feature></feature> -->
-    <!-- <team></team> -->
-    <!-- <process></process> -->
-    <!-- <grant></grant> -->
+    <toolbar></toolbar>
+    <feature></feature>
+    <team></team>
+    <process></process>
+    <grant></grant>
     <story></story>
+    <page-footer></page-footer>
+    
   </div>
 </template>
 <script>
@@ -16,6 +18,7 @@ import Team from '@/components/yangguan/index/Team';
 import Process from '@/components/yangguan/index/Process';
 import Grant from '@/components/yangguan/index/Grant';
 import Story from '@/components/yangguan/index/Story';
+import PageFooter from '@/components/yangguan/base/Footer';
 export default {
   data () {
     return {
@@ -24,7 +27,7 @@ export default {
   },
   created () {},
   components:{
-    Toolbar,Feature,Team,Process,Grant,Story
+    Toolbar,Feature,Team,Process,Grant,Story,PageFooter
 
   },
   methods:{
@@ -34,7 +37,6 @@ export default {
 </script>
 <style lang="less">
 .index-section{
-  margin-bottom: 4rem;
   font-size: .12rem;  
 }
 
