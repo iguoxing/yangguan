@@ -1,6 +1,7 @@
 <template>
     <div class="footer-page">
-      ​Copyright© 思渡®教育 上海沪鲸教育科技有限公司版权所有   沪ICP备17027948号
+      ​Copyright© 洋观国际教育咨询有限公司 
+       <!-- 沪ICP备17027948号 -->
     </div>  
 </template>
 <script>
