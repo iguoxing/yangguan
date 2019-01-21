@@ -13,7 +13,7 @@
       </div>
       <div class="story-man index-item">
         <el-carousel :interval="4000" type="card" height="400px">
-          <el-carousel-item v-for="item in man" :key="item">
+          <el-carousel-item v-for="item in man" :key="item.icon">
             <div class="man-item">
               <img class="man-icon" :src="item.icon">
               <div class="man-name">{{item.name}}</div>
