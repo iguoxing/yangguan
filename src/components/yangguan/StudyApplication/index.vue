@@ -245,7 +245,6 @@ components: {
         .tinybox_txt{
             width: 7.3rem;
             height: 0.64rem;
-            font-family: MicrosoftYaHei;
             font-size: 0.14rem;
             font-weight: normal;
             font-style: normal;
@@ -254,6 +253,7 @@ components: {
             letter-spacing: normal;
             color: #666666;
             margin:0.63rem auto auto;
+            text-align: left;
         }
         .tit_t{
             font-family: AdobeHeitiStd;
@@ -316,7 +316,7 @@ components: {
             }
         }
         .txt_t_p{
-            font-family: MicrosoftYaHei;
+            
             font-size: 0.18rem;
             font-weight: normal;
             font-style: normal;
@@ -465,7 +465,6 @@ components: {
         }
         p{
             width: 7.24rem;
-            font-family: MicrosoftYaHei;
             font-size: 0.18rem;
             text-align: center;
             color: #ffffff;
@@ -477,7 +476,6 @@ components: {
         margin:1.14rem auto 1.17rem;
         .txt_t{
             width: 7.27rem;
-            font-family: MicrosoftYaHei;
             font-size: 0.139rem;
             font-weight: normal;
             font-style: normal;
@@ -508,7 +506,6 @@ components: {
             margin: 1.17rem auto .68rem;
         }
         .txt_t_c2{
-            font-family: MicrosoftYaHei;
             font-size: 0.18rem;
             font-weight: normal;
             font-style: normal;
@@ -520,7 +517,6 @@ components: {
         }
         .txt_t_c3{
             width: 7.16rem;
-            font-family: MicrosoftYaHei;
             font-size: 0.14rem;
             font-weight: normal;
             text-align: center;
@@ -536,7 +532,6 @@ components: {
             margin: auto;
             text-align: left;
             h4{
-                font-family: MicrosoftYaHei;
                 font-size: 0.139rem;
                 font-weight: normal;
                 font-style: normal;

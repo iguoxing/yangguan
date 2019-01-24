@@ -815,7 +815,6 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
                         color: #454545;
                     }
                     p{
-                        font-family: MicrosoftYaHei;
                         font-size: 0.18rem;
                         font-weight: normal;
                         line-height: 1.5;
