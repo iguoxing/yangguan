@@ -1,5 +1,21 @@
 <template>
 <div class="andy_wrap">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+        <div class="swiper-slide page1_wrap">
+            <div class="page_con page1_con">
+                <p>把真正的咨询服务带入留学教育 </p>
+                <p> 让每个学生都能享受到offer带来的喜悦并从过程中得到提升</p>
+                <p> 启发 引导 培养 全球化视野且价值观良好的<span>领袖</span>与<span>精英 </span></p>
+            </div>
+            
+        </div>
+        <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
    <div class="Outerlayer">
        <div class="content_w">
            <div class="tinybox_t">
@@ -12,30 +28,32 @@
    <div class="content_w">
         <h3 class="tit_t">不论您是否选择洋观国际教育我们衷心希望每一位学生或家长能想清楚以下几个问题：</h3>
         <ul class="note_problem_item">
-            <li>
+            <li class="bg1">
                 <p>我为什么要出国？ 我能否适应并融入国外的学习生活？我的孩子适合在国外读书么</p>
             </li>
-            <li>
+            <li class="bg2">
                 <p>出国留学的花费我们家庭能否负担？这笔教育大投资的回报率是多少？远隔重洋如何能了解孩子的学习生活情况？</p>
             </li>
-            <li>
+            <li class="bg3">
                 <p>我现在的处境真的让我满意么，为什么会这样，我该如何做的更好？</p>
             </li>
-            <li>
+            <li class="bg4">
                 <p>我真的喜欢我现在的专业么，这个专业是否值得我用毕生去学习追求？</p>
             </li>
-            <li>
+            <li class="bg5">
                 <p>我身上有哪些不同的品质？我的何种特性或能力最能表现我自己？我的我的文书老师能否通过一页PS向学校展示一个独一无二的我？</p>
             </li>
         </ul>
     </div>
     <div class="content_w">
         <p class="txt_t_p">哪些是你具有或欠缺的品格，你能想到具体事例么</p>
-        <div class="tinybox_9"></div>
+        <div class="tinybox_9">
+            <img src="./images/square_9.png" alt=""/>
+        </div>
     </div>
     <div class="content_w mt_t70_b110">
         <div class="pro_tiny_w mb20">
-            <div class="avatar_l">fbd546</div>
+            <div class="avatar_l"></div>
             <div class="por_con l">
                 <p>我们深知每个学生每个家庭都是独一无二的，所以在服务客户的每时每刻时我们会自我提问：</p>
                 <p> 1：如何帮助引导客户弄清自己的需求？</p>
@@ -69,12 +87,14 @@
     <div class="content_b_w">
         <div class="">
             <p class="txt_t">我们的咨询过程按照麦肯锡7步分析法引导学生1发现&陈述问题，2分析问题，3简化问题，4制定计划，5关键分析，6构建论证（计划），7输出成果（执行），把过程展示如下图 ，</p>
-            <p class="imgbox">图片</p>
+            <p class="imgbox"><img src="./images/AnalysisSteps.png" style="width: 7.69rem;height: 4rem;" alt=""/></p>
             <p class="txt_t_c">Know who you really are & Bring the best out of you</p>
             <p class="txt_t_c2">
                 希望在我们的启迪、引导、理解、关怀下学生可以针对以下问题进行思考并至少获得阶段性的答案,对未来进行适当规划
             </p>
-            <p class="imgbox">图片</p>
+            <p class="imgbox">
+                <img src="./images/analysis_img.png"  style="width: 7.17rem;height: 3.01rem;" alt=""/>
+            </p>
             <p class="txt_t_c3">
                 在完成科学系统的自问分析，对自我及所处环境有了更好的认知后可以与主申请导师商定具体方案，如果时间充分而且自律性强可以选择<a href=''>单项服务</a>或全套服务进行深度参与，如果时间有限或自身需求是不想深度参与繁杂的申请工作，也可选择我们的<a href=''>黑卡管家</a>项目安心的做一个甩手掌柜
             </p>
@@ -93,6 +113,7 @@
 </div>
 </template>
 <script>
+import Swiper from 'swiper';
 // import Toolbar from '@/components/yangguan/base/Header';
 import PageFooter from '@/components/yangguan/base/Footer';
 export default {
@@ -104,7 +125,12 @@ created: function() {
 console.log('创建之后'); 
 },
 mounted: function(){
-console.log('创建前') 
+    var swiper = new Swiper('.swiper-container', {
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
 },
 methods: {
 },
@@ -114,7 +140,8 @@ components: {
 },
 }
 </script>
-<style lang="less" scoped>
+<style lang="less">
+@import url('../../../assets/swiper/swiper.min.css');
 .andy_wrap{
     h3,h4,p,span,ul,li{
         padding: 0;
@@ -126,6 +153,54 @@ components: {
     .fr{
         float:right;
     }
+    .swiper-container {
+      width: 100%;
+      height: 7.6rem;
+    }
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      &.page1_wrap{
+          background: url('./images/banner_bg1.jpg') no-repeat center top;
+          background-size:cover 7.6rem; 
+      }
+      .page_con{
+        width: 12rem;
+        &.page1_con{
+            p{
+              font-size: 0.26rem;
+              color: #fff;
+              line-height: 2.31;
+              span{font-size: 0.36rem;}
+            }
+        }
+      }
+    }
+    .swiper-pagination{
+        bottom: .83rem;
+        .swiper-pagination-bullet{
+            background: rgba(255, 255, 255, 1) !important;
+            // &.swiper-pagination-bullet-active{
+            //     background: #fff !important;
+            // }
+        }
+    }
+
+
+
+
     .Outerlayer{
         background-color: #f5f5f5;
         padding:1.3rem 0rem 1.25rem;
@@ -142,10 +217,11 @@ components: {
             padding-top:1.38rem;
             box-sizing: border-box;
             margin: auto;
-            background-color: rgba(0, 0, 0, 0.8);
+            // background-color: rgba(0, 0, 0, 0.8);
             text-align: center;
+            background: url('./images/fj_bg.jpg') no-repeat center center;
+            background-size: cover;
             h3{
-                font-family: MicrosoftYaHei;
                 font-size: 0.26rem;
                 font-weight: bold;
                 font-style: normal;
@@ -198,10 +274,33 @@ components: {
                 height: 4.1rem;
                 box-sizing: border-box;
                 padding:2.6rem 0.1rem 0rem 0.1rem;
-                background-color: rgba(0, 0, 0, 0.55);
+                // background-color: rgba(0, 0, 0, 0.55);
                 border-right:0.01rem solid #fff;
                 display: table; 
                 float: left;
+                &.bg1{
+                    background: url('./images/pg_bg1.jpg') no-repeat center center;
+                    background-size:2.38rem auto; 
+                }
+                &.bg2{
+                    background: url('./images/pg_bg2.jpg') no-repeat center center;
+                    background-size:2.38rem auto; 
+                }
+                &.bg3{
+                    background: url('./images/pg_bg3.jpg') no-repeat center center;
+                    background-size:2.38rem auto; 
+                }
+                &.bg4{
+                    background: url('./images/pg_bg4.jpg') no-repeat center center;
+                    background-size:2.38rem auto; 
+                }
+                &.bg5{
+                    background: url('./images/pg_bg5.jpg') no-repeat center center;
+                    background-size:2.38rem auto; 
+                }
+                &:hover{
+                     background-size:3rem auto; 
+                }
                 p{
                     color: #fff;
                     font-size: 0.18rem;
@@ -212,6 +311,7 @@ components: {
                     letter-spacing: normal;
                     text-align: center;
                     color: #ffffff;
+                    cursor: default;
                 }
             }
         }
@@ -228,11 +328,14 @@ components: {
             margin: 0.68rem auto 0.5rem;
         }
         .tinybox_9{
-            width: 5.15rem;
-            height: 5.15rem;
-            background-color: rgba(0, 0, 0, 0);
+            width: 5.61rem;
+            height: 5.61rem;
             display: inherit;
             margin: auto;
+            img{
+               width: 5.61rem;
+                height: 5.61rem; 
+            }
         }
         .pro_tiny_w{
             position: relative;
@@ -241,20 +344,24 @@ components: {
             &.mb20{margin-bottom:.2rem;}
             .avatar_l,.avatar_r{
                 border-radius:100%;
-                width: 0.75rem;
-                height: 0.75rem;
+                width: 0.84rem;
+                height: 0.84rem;
                 display: inline-block;
                 position: absolute;
                 
             }
             .avatar_l{
-                border:#fbd546 0.04rem solid;
-                left: -0.97rem;
+                // border:#fbd546 0.04rem solid;
+                left: -1.1rem;
                 top: 0.25rem;
+                background: url('./images/avatar_l.png') no-repeat center center;
+                background-size: .84rem;
             }
             .avatar_r{
-                border:#009d95 0.04rem solid;
-                right: -0.97rem;
+                // border:#009d95 0.04rem solid;
+                background: url('./images/avatar_r.png') no-repeat center center;
+                background-size: .84rem;
+                right: -1.1rem;
                 top: 0.25rem;
             }
             .por_con{
@@ -263,6 +370,7 @@ components: {
                 position: relative;
                 font-size: 0.175rem;
                 color: #000000;
+                text-align: left;
                 &.l,&.r{
                     &::before{
                         content: '';
@@ -272,7 +380,6 @@ components: {
                         border-width: 0.12rem;
                         border-style: solid;
                         top: .5rem;
-                        
                     }
                 }
                 &.l{
@@ -327,9 +434,9 @@ components: {
     .Outerlayer_b{
         width: 100%;
         height: 4.3rem;
-        background: #009d95;
+        background: url('./images/Initialheart_bg.jpg') no-repeat center top;
+        background-size: cover;
         h3{
-            font-family: MicrosoftYaHei;
             font-size: 0.4rem;
             font-weight: normal;
             font-style: normal;
@@ -341,6 +448,20 @@ components: {
             margin: 1.26rem auto .46rem;
             width: 100%;
             display: inline-block;
+            position: relative;
+            &::after{
+                content: '';
+                position: absolute;
+                bottom:-.1rem;
+                left:0;
+                right:0;
+                width: 100%;
+                height: .13rem;
+                background: url('./images/line_b.png') no-repeat center center;
+                background-size: auto .13rem; 
+                display: block;
+                
+            }
         }
         p{
             width: 7.24rem;
@@ -368,12 +489,11 @@ components: {
         }
         .imgbox{
             width: 7.69rem;
-            height: 3.89rem;
+            height: 4rem;
             display: block;
             font-size: 0.3rem;
             color: #fff;
-            background: #000000;
-            margin-top:.72rem; 
+            margin-top:.72rem;
         }
         .txt_t_c{
             font-family: TimesNewRomanPS-MT;
