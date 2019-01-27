@@ -7,22 +7,15 @@ const uniqueService = resolve => require(['@/components/yangguan/uniqueService']
 
 Vue.use(Router)
 export default new Router({
-    // 选中状态
     linkActiveClass: 'active',
     mode: 'history',
     routes: [
-        // 官网移动版
         {path: '/',component: HomeIndex,alias:"/home"},
         {path: '/feature',component: FeatureProject},
         // {path: '/feature',component: FeatureProject},
         {path: '/StudyApplication',component: StudyApplication},
         {path: '/uniqueService',component: uniqueService},
+        {path: '*',component: HomeIndex},
         
     ]
 })
-
-// 创建根实例
-// new Vue({
-//   el: '#example',
-
-// })

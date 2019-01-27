@@ -7,9 +7,9 @@
     <ul>
       <li class="active"><a href="/">首页</a></li>
       <li class="dot"></li>
-      <li><a>留学申请</a></li>
+      <li><a href="/StudyApplication">留学申请</a></li>
       <li class="dot"></li>
-      <li><a>单项服务</a></li>
+      <li><a href="/uniqueService">单项服务</a></li>
       <li class="dot"></li>
       <li><a href="/feature">特色项目</a></li>
     </ul>
@@ -91,6 +91,7 @@ ul{
     left: 50%;
     margin-bottom: 0;
     margin-left: -6rem;
+    z-index: 9;
   }
   
 

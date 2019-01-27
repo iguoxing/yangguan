@@ -1,5 +1,6 @@
 <template>
 <div class="andy_wrap">
+    <nav-clarity></nav-clarity>
     <div class="swiper-container">
         <div class="swiper-wrapper">
         <div class="swiper-slide page1_wrap">
@@ -10,8 +11,8 @@
             </div>
             
         </div>
-        <div class="swiper-slide">Slide 2</div>
-        <div class="swiper-slide">Slide 3</div>
+        <!-- <div class="swiper-slide">Slide 2</div>
+        <div class="swiper-slide">Slide 3</div> -->
         </div>
         <!-- Add Pagination -->
         <div class="swiper-pagination"></div>
@@ -116,6 +117,7 @@
 <script>
 import Swiper from 'swiper';
 // import Toolbar from '@/components/yangguan/base/Header';
+import NavClarity from '@/components/yangguan/base/NavClarity';
 import PageFooter from '@/components/yangguan/base/Footer';
 export default {
 data() {
@@ -137,12 +139,13 @@ methods: {
 },
 components: {
     // Toolbar,
-    PageFooter
+    PageFooter,NavClarity
 },
 }
 </script>
 <style lang="less">
 @import url('../../../assets/swiper/swiper.min.css');
+
 .andy_wrap{
     h3,h4,p,span,ul,li{
         padding: 0;

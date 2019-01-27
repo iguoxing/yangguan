@@ -2,7 +2,6 @@
   <div class="header-page">
     <nav-clarity></nav-clarity>
     <banner></banner>
-      
     <nav-bar></nav-bar>
   </div>  
 </template>

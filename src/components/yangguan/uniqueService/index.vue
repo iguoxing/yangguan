@@ -1,6 +1,7 @@
 
 <template>
 <div class="">
+    <nav></nav>
     <div class="swiper-container" :style="'height:'+this.clientHeight + 'px'">
         <div class="swiper-wrapper">
             <div class="swiper-slide page_bg1">
@@ -478,10 +479,13 @@
             </div>
         </div>
     </div>
+    <page-footer></page-footer>
 </div>
 </template>
 <script>
 import Swiper from 'swiper';
+import NavBar from '@/components/yangguan/base/Nav';
+import PageFooter from '@/components/yangguan/base/Footer';
 export default {
 data() {
 return {
@@ -519,6 +523,7 @@ methods: {
     }
 },
 components: {
+    PageFooter,NavBar
 },
 }
 </script>
