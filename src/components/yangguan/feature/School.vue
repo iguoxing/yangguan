@@ -27,8 +27,11 @@
       <div class="feature-title">常春藤启示录：</div>
       <div class="feature-popover">
         <div class="feature-arrow"></div>
-        <el-popover visible-arrow="true" placement="bottom" value="true" width="1200" trigger="click" content="为什么名人家的孩子总能进名校？为什么哈佛的学生俱乐部总被知名家族的孩子长期霸占？洋观国际告诉你滕校的Z-list的确存在，教育本身就是不公平的，想站在塔尖儿必然要有非凡之处，名校确有捷径可寻。">
-        </el-popover>   
+        <div class="flex-center-center">
+          <div class="feature-content">
+            为什么名人家的孩子总能进名校？为什么哈佛的学生俱乐部总被知名家族的孩子长期霸占？洋观国际告诉你滕校的Z-list的确存在，教育本身就是不公平的，想站在塔尖儿必然要有非凡之处，名校确有捷径可寻。
+          </div>
+        </div>
       </div>
       
     </div>
@@ -103,7 +106,15 @@
 </div>
  
 </template>
-
+<script>
+export default {
+   data(){
+        return {
+            visible: true
+        }
+    },
+}
+</script>
 <style lang="less">
 .feature-project{
   .feature-school{
@@ -131,7 +142,6 @@
       .feature-popover{
         position: relative;
         .feature-arrow{
-          
           margin-right: 3px;
           border-top-width: 0;
           border-bottom-color: #ebeef5;
@@ -152,6 +162,24 @@
           // border-bottom-color: #fff;
           content: " ";
           border-width: .12rem;
+        }
+        .feature-content{
+          position: absolute;
+          top: 0rem;
+          box-sizing: border-box;
+          width: 12rem;
+          min-width: 1.5rem;
+          line-height: 1.89;
+          padding: 0.3rem 0.75rem;
+          text-align: left;
+          border: .01rem solid #ebeef5;
+          border-radius: 0.08rem;
+          background: #fff;
+          z-index: 2000;
+          background-color: #3790fe;
+          color: #ffffff;
+          font-size: .18rem;
+          box-shadow: 0 .02rem 0.12rem 0 rgba(0,0,0,.1);
         }
       }
       

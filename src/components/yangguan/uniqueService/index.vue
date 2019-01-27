@@ -528,8 +528,6 @@ components: {
 }
 </script>
 <style lang="less">
-    @import url('../../../assets/swiper/swiper.min.css');
-
 /* .swiper-container {
     width: 100%;
     height: 300px;

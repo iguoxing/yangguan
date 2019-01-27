@@ -13,17 +13,8 @@ import Project from '@/components/yangguan/feature/Project';
 import School from '@/components/yangguan/feature/School';
 import PageFooter from '@/components/yangguan/base/Footer';
 export default {
-  data () {
-    return {
-      msg: 0
-    }
-  },
-  created () {},
   components:{
     NavBar,Project,School,PageFooter
-  },
-  methods:{
-    
   },
 }
 </script>

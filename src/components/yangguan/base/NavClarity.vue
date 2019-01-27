@@ -1,8 +1,8 @@
 <template>
 <div class="header-nav first">
   <div class="header-title">
-    <a class="logo">
-      <img src="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.png">
+    <a class="logo" href="/">
+      <img src="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.svg">
     </a>
     <ul>
       <li class="active"><a href="/">首页</a></li>

@@ -1,7 +1,7 @@
 <template>
 <div class="header-nav second">
   <div class="header-title">
-      <a class="logo">
+      <a class="logo" href="/">
         <img src="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.png">
       </a>
       <ul>

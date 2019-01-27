@@ -144,8 +144,6 @@ components: {
 }
 </script>
 <style lang="less">
-@import url('../../../assets/swiper/swiper.min.css');
-
 .andy_wrap{
     h3,h4,p,span,ul,li{
         padding: 0;

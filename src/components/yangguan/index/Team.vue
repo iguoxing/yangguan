@@ -106,10 +106,6 @@ export default{
 }    
 </script>
 
-<style scoped>
-@import url('../../../assets/css/base.css');
-</style>
-
 <style lang="less">
 .index-team{
   padding-top: .8rem;
