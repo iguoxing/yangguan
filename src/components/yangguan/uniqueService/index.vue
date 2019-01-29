@@ -1,12 +1,14 @@
 
 <template>
 <div class="">
-    <nav></nav>
-    <div class="swiper-container" :style="'height:'+this.clientHeight + 'px'">
+    <nav-bar></nav-bar>
+    <!-- <div class="swiper-container2" :style="'height:'+this.clientHeight + 'px'">
         <div class="swiper-wrapper">
             <div class="swiper-slide page_bg1">
                 <div class="page1_content flex-align-content">
-                    <div class="img-box"></div>
+                    <div class="img-box">
+                        <img src="./images/page_1_1.png" alt=""/>
+                    </div>
                     <div class="con-text">
                         <h3>按你所需 自由组合  </h3>
                         <p>为你提供物有所值的<br/> 留学咨询服务</p>
@@ -15,21 +17,60 @@
             </div>
             <div class="swiper-slide page_bg2">
                 <div class="page2_content flex-align-content">
-                    <div class="">dssd</div>
+                    <div class="atlas img_box"></div>
                     <div class="item l">
-                        <img src="" alt="">
+                        <span class="atlas"></span>
                         <p>独创8M单项服务</p>
                     </div>
                     <div class="item l_b">
-                        <img src="" alt="">
+                        <span class="atlas"></span>
                         <p>申请管理平台</p>
                     </div>
                     <div class="item r">
-                        <img src="" alt="">
+                        <span class="atlas"></span>
                         <p>独家选校系统</p>
                     </div>
                     <div class="item r_b">
-                        <img src="" alt="">
+                        <span class="atlas"></span>
+                        <p>7年专注申请工作</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-pagination"></div>
+    </div> -->
+    <div class="swiper-container" :style="'height:'+ this.clientHeight + 'px'">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide page_bg1">
+                <div class="page1_content flex-align-content">
+                    <div class="img-box">
+                        <img src="./images/page_1_1.png" alt=""/>
+                    </div>
+                    <div class="con-text">
+                        <h3>按你所需 自由组合  </h3>
+                        <p>为你提供物有所值的<br/> 留学咨询服务</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide page_bg2">
+                <div class="page2_content flex-align-content">
+                    <div class="atlas img_box"></div>
+                    <div class="item l">
+                        <span class="atlas"></span>
+                        <p>独创8M单项服务</p>
+                    </div>
+                    <div class="item l_b">
+                        <span class="atlas"></span>
+                        <p>申请管理平台</p>
+                    </div>
+                    <div class="item r">
+                        <span class="atlas"></span>
+                        <p>独家选校系统</p>
+                    </div>
+                    <div class="item r_b">
+                        <span class="atlas"></span>
                         <p>7年专注申请工作</p>
                     </div>
                 </div>
@@ -44,21 +85,21 @@
                     </div>
                     <div class="page3_con_r">
                         <div class="page-item w435">
-                            <span class="icon"></span>
+                            <span class="icon bgicon1"></span>
                             <div class="page-txt m-l22">
                                 <span>服务方式</span>
                                 <p>通过详细背景调查及盖洛普测试，结合个人经历挖掘申请优势，从学术背景、职业发展和综合素质三大角度制定专属申请策略及时间规划</p>
                             </div>
                         </div>
                         <div class="page-item">
-                            <span class="icon"></span>
+                            <span class="icon bgicon2"></span>
                             <div class="page-txt m-l54">
                                 <span>服务方式</span>
                                 <p>线下面对面会议或线上视频会议</p>
                             </div>
                         </div>
                         <div class="page-item w435">
-                            <span class="icon"></span>
+                            <span class="icon bgicon3"></span>
                             <div class="page-txt m-l22">
                                 <span>结果表现形式</span>
                                 <p>咨询师现场反馈、申请规划报告、时间进度表</p>
@@ -76,21 +117,21 @@
                     </div>
                     <div class="page_item_box ml-135">
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>基于M1申请规划结果，综合考虑学生个人及家庭背景，兼顾兴趣与职业发展,在中外职场导师多对一的协同指导下，确认大专业领域及细分方向，以职业为导向准备申请。</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线下面对面会议或线上视频会议</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>1对1 职场导师指导、职业发展报告、实习内推机会 （可能需额外付费）</p>
@@ -103,21 +144,21 @@
                 <div class="page_content flex-align-content">
                     <div class="page_item_box mr-135">
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>结合网上选校数据库系统，让学生充分了解学校及项目情况。根据学生专业定位、家庭条件、职业目标等背景情况，推荐专业选校名单，不盲目选择大众情人校，不推荐保底院校，合理冲刺，拒绝名校炮灰，在有限的申请季里最高效的成最合理的申请。</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线下面对面会议或线上视频会议+网上选校数据库系统</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>网上选校数据库系统、选校建议报告</p>
@@ -140,28 +181,26 @@
                         <p class="t1">洋观国际:私人定制、全程参与、紧贴自身独特经历、直接英文成稿、语言地道、叙事细节生动、塑造形象丰满、不同学校&项目差异化 </p>
                         <p class="t1">传统中介文书与我们文书的对比：</p>
                         <div class="tinybox">
-                            <span class="icon"></span>
-                            <span>VS</span>
-                            <span class="icon"></span>
+                            <img src="./images/page_6_img.png" alt="">
                         </div>
                     </div>
                     <div class="page_item_box ml-135">
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>根据学生背景、性格、经历等创作出真实且能凸显其具体品质和特点的个性化文书。文书委员会及中美顾问共同把关，拒绝模板拒绝Chinglish。可自由选择仅创作基础稿文书或是包含针对各学校及项目撰写的专属文书。</p>
                             </div>
                         </div>
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线下面对面会议或线上视频会议</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>英文个人陈述、英文简历、英文Essay、英文推荐信</p>
@@ -174,21 +213,21 @@
                 <div class="page_content flex-align-content">
                     <div class="page_item_box mr-135">
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>利用申请流程管理平台，帮助客户管理申请材料准备及寄送过程，有效避免材料准备和投递不当导致的错过截止日期等问题。</p>
                             </div>
                         </div>
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线上邮件、微信交流或视频会议</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>申请管理平台、网申填写、材料准备指导、申请材料寄送</p>
@@ -211,21 +250,21 @@
                     </div>
                     <div class="page_item_box ml-135">
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>涵盖录像、1对1线上skype面试、线下面试等多种功能面试形式。为学生提前总结面经，提供中方和美籍面试官1对1培训，提升学生面试技巧，增强实战经验</p>
                             </div>
                         </div>
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线下面对面会议或线上视频会议</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>1对1面试培训、面试总结报告</p>
@@ -238,21 +277,21 @@
                 <div class="page_content flex-align-content">
                     <div class="page_item_box mr-135">
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>包含海外接机、住宿，行李准备，机票购买、国外安全及自我保护培训，海外求职，归国学位认证及海归求职等内容，帮助学生全面为开启异乡</p>
                             </div>
                         </div>
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线上邮件、微信交流或视频会议</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>签证培训、代签证服务  （可能需额外付费）</p>
@@ -274,21 +313,21 @@
                     </div>
                     <div class="page_item_box ml-135">
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico1"></span>
                             <div class="item-text">
                                 <span>服务规划</span>
                                 <p>包含海外接机、住宿，行李准备，机票购买、国外安全及自我保护培训，海外求职，归国学位认证及海归求职等内容，帮助学生全面为开启异乡</p>
                             </div>
                         </div>
                         <div class="item mb5">
-                            <span class="icon"></span>
+                            <span class="icon ico2"></span>
                             <div class="item-text">
                                 <span>服务方式</span>
                                 <p>线下面对面会议或线上视频会议</p>
                             </div>
                         </div>
                         <div class="item">
-                            <span class="icon"></span>
+                            <span class="icon ico3"></span>
                             <div class="item-text">
                                 <span>结果表现形式</span>
                                 <p>行前培训、校友聚会、海外留学宝典等</p>
@@ -484,7 +523,7 @@
 </template>
 <script>
 import Swiper from 'swiper';
-import NavBar from '@/components/yangguan/base/Nav';
+import NavBar from '@/components/yangguan/base/NavClarity';
 import PageFooter from '@/components/yangguan/base/Footer';
 export default {
 data() {
@@ -500,17 +539,36 @@ console.log('创建之后');
 
 mounted: function(){
 
-    this.clientHeight =  document.documentElement.clientHeight         //document.body.clientWidth;
+    this.clientHeight =  window.innerHeight - 71       //document.body.clientWidth;
+    console.log(this.clientHeight);
     setTimeout(() => {
+        var mySwiper = new Swiper('.swiper-container2', {
+            allowTouchMove: true, //开启拖动
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+            // direction: 'vertical', // 垂直切换选项
+            // autoHeight: true ,
+            // loop: true, // 循环模式选项
+            // slidesPerView: 1,
+            // mousewheel: true,
+            pagination: {
+                el: '.swiper-pagination',
+                // mousewheel: true,//鼠标滚轮控制
+                // clickable:true,
+            },
+        });
         var swiper = new Swiper('.swiper-container', {
             direction: 'vertical', // 垂直切换选项
             // autoHeight: true ,
             // loop: true, // 循环模式选项
             slidesPerView: 1,
             mousewheel: true,
+            allowTouchMove: false, //开启拖动
             pagination: {
                 el: '.swiper-pagination',
-                mousewheel: true,//鼠标滚轮控制
+                mousewheel: false,//鼠标滚轮控制
                 clickable:true,
             },
         });
@@ -579,6 +637,7 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
         display: inline-block;
         border-radius: 100%;
         opacity: 1;
+        outline: none;
         &.swiper-pagination-bullet-active{
             background: transparent;
             width: 0.08rem;
@@ -594,37 +653,48 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
 
 .flex-align-content{display: flex;justify-content: center;align-items: center;}
     .page_bg1{
-        background: #f30;
+        background:url('./images/page_1_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg2{
-        background: #f89;
+        background:url('./images/page_2_bg.jpg') no-repeat left top;
+        background-size: cover;
     }
     .page_bg3{
-        background: #d423;
+        background:url('./images/page_3_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg4{
-        background: #e22;
+        background:url('./images/page_4_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg5{
-        background: #fe0;
+        background:url('./images/page_5_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg6{
-        background: #f89;
+        background:url('./images/page_6_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg7{
-        background: #d423;
+        background:url('./images/page_7_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg8{
-        background: rgb(12, 8, 233);
+        background:url('./images/page_8_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg9{
-        background: #de2;
+        background:url('./images/page_9_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg10{
-        background: #fd0;
+        background:url('./images/page_10_bg.jpg') no-repeat center top;
+        background-size:  cover;
     }
     .page_bg11{
-        background: #c0f;
+        background:url('./images/page_11_bg.jpg') no-repeat center top;
+        background-size:  cover;
         display: block;
     }
     .page1_content{
@@ -632,7 +702,10 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
             width: 4.3rem;
             height: 6.12rem;
             display: block;
-            background: #fff
+            img{
+               width: 4.3rem;
+            height: 6.12rem; 
+            }
         }
         .con-text{
             text-align: left;
@@ -656,7 +729,15 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
         height: 5.5rem;
         position: relative;
         display: block;
-        background: #ccc;
+        .atlas{
+            background: url('./images/page_2_atlas.png') no-repeat;
+        }
+        .img_box{
+            width: 4.5rem;
+            height: 5.5rem;
+            background-position: -2.1rem -1.1rem;
+            background-size: auto 7.8rem;
+        }
         .item{
             text-align: center;
             font-size: 0.18rem;
@@ -665,32 +746,48 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
             width: 2rem;
             position: absolute;
             height: 1.5rem;
+            .atlas{
+                width: .8rem;
+                height: .8rem;
+                display: block;
+                margin: auto;
+            }
             &.l{
                 left:-3.1rem;
-                top:0.2rem;
+                top:0.8rem;
+                .atlas{
+                    background-position: 0 -1.58rem;
+                    background-size: auto 7.8rem;
+                }
             }
             &.l_b{
                 left:-3.1rem;
-                bottom:0.2rem
+                bottom:0.2rem;
+                .atlas{
+                    background-position: 0rem -4.05rem;
+                    background-size: auto 7.8rem;
+                }
             }
             &.r{
                 right:-3.1rem;
-                top:0.2rem;
+                top:0.8rem;
+                .atlas{
+                    background-position: -7.68rem -1.58rem;
+                    background-size: auto 7.8rem;
+                }
             }
             &.r_b{
                 right:-3.1rem;
-                bottom:0.2rem
-            }
-            img{
-                width: .8rem;
-                height: .8rem;
-                border:0.02rem solid #fff;
-                display: block;
-                margin: auto;
+                bottom:0.2rem;
+                .atlas{
+                    background-position: -7.68rem -4.05rem;
+                    background-size: auto 7.8rem;
+                }
             }
             p{
                 width: 100%;
                 font-size: 0.2rem;
+                margin-top:.25rem; 
             }
         }
     }
@@ -731,8 +828,14 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
                 .icon{
                     width: 0.78rem;
                     height: 0.78rem;
-                    background-color: rgba(0, 0, 0,.5);
+                    background:url('./images/page_3_icon.png') no-repeat;
+                    background-size: 1.1rem auto;
                     display: block;
+                    &.bgicon1{
+                        background-position: right 0;
+                    }
+                    &.bgicon2{background-position: 0 -1.72rem;}
+                    &.bgicon3{background-position: right bottom;}
                 }
                 .page-txt{
                     flex: 1;
@@ -780,7 +883,12 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
                 }
             }
             .tinybox{
-                .icon{}
+                margin-top:.27rem; 
+                img{
+                    width: 2.8rem;
+                    height: .87rem;
+                    display: inline-block;
+                }
             }
         }
         .page_item_box{
@@ -803,10 +911,14 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
                 .icon{
                     width: 0.78rem;
                     height: 0.78rem;
-                    background-color: rgba(0, 0, 0, .5);
+                    // background-color: rgba(50, 16, 202, 0.5);
+                    background: url('./images/page_456789_icon.png') no-repeat;
+                    background-size:auto 3.9rem; 
                     display: block;
-                    // margin:0 .3rem auto .3rem;
                     margin:auto .3rem;
+                    &.ico1{background-position:0 0}
+                    &.ico2{background-position:0 -2.08rem}
+                    &.ico3{background-position:0 -3.12rem}
                 }
                 .item-text{
                     flex: 1;
@@ -836,7 +948,7 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
             font-weight: bold;
             color: #ffffff;
             text-align: left;
-            margin: .55rem auto 0;
+            margin: .95rem auto 0;
             span{
                 font-size: 0.16rem;
                 line-height: 0.88;
