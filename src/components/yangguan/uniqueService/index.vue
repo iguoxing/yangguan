@@ -2,77 +2,47 @@
 <template>
 <div class="">
     <nav-bar></nav-bar>
-    <!-- <div class="swiper-container2" :style="'height:'+this.clientHeight + 'px'">
+    <div class="swiper-container swiper-container-w" :style="'height:'+ this.clientHeight + 'px'">
         <div class="swiper-wrapper">
-            <div class="swiper-slide page_bg1">
-                <div class="page1_content flex-align-content">
-                    <div class="img-box">
-                        <img src="./images/page_1_1.png" alt=""/>
+            <div class="swiper-slide">
+                <div class="swiper-container swiper-container-2" :style="'height:'+this.clientHeight + 'px'">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide page_bg1">
+                            <div class="page1_content flex-align-content">
+                                <div class="img-box">
+                                    <img src="./images/page_1_1.png" alt=""/>
+                                </div>
+                                <div class="con-text">
+                                    <h3>按你所需 自由组合  </h3>
+                                    <p>为你提供物有所值的<br/> 留学咨询服务</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide page_bg2">
+                            <div class="page2_content flex-align-content">
+                                <div class="atlas img_box"></div>
+                                <div class="item l">
+                                    <span class="atlas"></span>
+                                    <p>独创8M单项服务</p>
+                                </div>
+                                <div class="item l_b">
+                                    <span class="atlas"></span>
+                                    <p>申请管理平台</p>
+                                </div>
+                                <div class="item r">
+                                    <span class="atlas"></span>
+                                    <p>独家选校系统</p>
+                                </div>
+                                <div class="item r_b">
+                                    <span class="atlas"></span>
+                                    <p>7年专注申请工作</p>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="con-text">
-                        <h3>按你所需 自由组合  </h3>
-                        <p>为你提供物有所值的<br/> 留学咨询服务</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide page_bg2">
-                <div class="page2_content flex-align-content">
-                    <div class="atlas img_box"></div>
-                    <div class="item l">
-                        <span class="atlas"></span>
-                        <p>独创8M单项服务</p>
-                    </div>
-                    <div class="item l_b">
-                        <span class="atlas"></span>
-                        <p>申请管理平台</p>
-                    </div>
-                    <div class="item r">
-                        <span class="atlas"></span>
-                        <p>独家选校系统</p>
-                    </div>
-                    <div class="item r_b">
-                        <span class="atlas"></span>
-                        <p>7年专注申请工作</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-        <div class="swiper-pagination"></div>
-    </div> -->
-    <div class="swiper-container" :style="'height:'+ this.clientHeight + 'px'">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide page_bg1">
-                <div class="page1_content flex-align-content">
-                    <div class="img-box">
-                        <img src="./images/page_1_1.png" alt=""/>
-                    </div>
-                    <div class="con-text">
-                        <h3>按你所需 自由组合  </h3>
-                        <p>为你提供物有所值的<br/> 留学咨询服务</p>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-slide page_bg2">
-                <div class="page2_content flex-align-content">
-                    <div class="atlas img_box"></div>
-                    <div class="item l">
-                        <span class="atlas"></span>
-                        <p>独创8M单项服务</p>
-                    </div>
-                    <div class="item l_b">
-                        <span class="atlas"></span>
-                        <p>申请管理平台</p>
-                    </div>
-                    <div class="item r">
-                        <span class="atlas"></span>
-                        <p>独家选校系统</p>
-                    </div>
-                    <div class="item r_b">
-                        <span class="atlas"></span>
-                        <p>7年专注申请工作</p>
-                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-pagination swiper-pagination-v"></div>
                 </div>
             </div>
             <div class="swiper-slide page_bg3">
@@ -499,7 +469,7 @@
                 </div>
             </div>
         </div>
-        <div class="swiper-pagination"></div>
+        <div class="swiper-pagination swiper-pagination-h"></div>
     </div>
     <div class="ElasticLayer" v-if='buyLayerShow' @scroll.prevent>
         <div class="bgLayer"></div>
@@ -538,12 +508,15 @@ console.log('创建之后');
 },
 
 mounted: function(){
+    
 
     this.clientHeight =  window.innerHeight - 71       //document.body.clientWidth;
     console.log(this.clientHeight);
+    
     setTimeout(() => {
-        var mySwiper = new Swiper('.swiper-container2', {
+        var mySwiper = new Swiper('.swiper-container-2', {
             allowTouchMove: true, //开启拖动
+            // pagination: '.swiper-pagination-h',
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -554,20 +527,21 @@ mounted: function(){
             // slidesPerView: 1,
             // mousewheel: true,
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination-v',
                 // mousewheel: true,//鼠标滚轮控制
                 // clickable:true,
             },
         });
-        var swiper = new Swiper('.swiper-container', {
+        var swiper = new Swiper('.swiper-container-w', {
             direction: 'vertical', // 垂直切换选项
             // autoHeight: true ,
             // loop: true, // 循环模式选项
+            // pagination: '.swiper-pagination-h',
             slidesPerView: 1,
             mousewheel: true,
             allowTouchMove: false, //开启拖动
             pagination: {
-                el: '.swiper-pagination',
+                el: '.swiper-pagination-h',
                 mousewheel: false,//鼠标滚轮控制
                 clickable:true,
             },
@@ -622,7 +596,7 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
   padding: 0;
   margin: 0;
 }
-.swiper-pagination{
+.swiper-pagination-h{
     border-radius: .2rem;
     background: #fff;
     padding:0.13rem 0.13rem 0rem 0.13rem;
@@ -643,9 +617,27 @@ p,span,ul,li,h1,h2,h3,h4,h5,{
             width: 0.08rem;
             height: 0.08rem;
             border: solid 0.01rem #e60012;
+        }
+    }
+}
+.swiper-pagination-v{
+    .swiper-pagination-bullet{
+        margin: 0 0.13rem 0 0 !important;
+        width: 0.1rem;
+        height: 0.1rem;
+        background-color: #949494;
+        display: inline-block;
+        border-radius: 100%;
+        opacity: 1;
+        outline: none;
+        margin-right:.1rem; 
+        &.swiper-pagination-bullet-active{
+            // width: 0.08rem;
+            // height: 0.08rem;
             background-color: #ffffff;
         }
     }
+
 }
 
 
