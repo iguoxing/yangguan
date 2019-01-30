@@ -125,6 +125,7 @@ export default {
     // opacity: 0.7;
     padding: .7rem 0;
     background-color: #fafafa;
+    background-image:url(https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/feature/donate_bg.jpg);
     .feature-item.first-item{
       margin-bottom: 1.8rem;
       span{
@@ -194,6 +195,7 @@ export default {
   .feature-price{
     padding: .7rem 0;
     background-color: #666;
+    background-image: url(https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/feature/cost_bg.jpg);
     .feature-title{
       color: #fff;
     }
