@@ -4,7 +4,7 @@
     <nav-bar></nav-bar>
     <div class="swiper-container swiper-container-w" :style="'height:'+ this.clientHeight + 'px'">
         <div class="swiper-wrapper">
-            <div class="swiper-slide">
+            <!-- <div class="swiper-slide">
                 <div class="swiper-container swiper-container-2" :style="'height:'+this.clientHeight + 'px'">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide page_bg1">
@@ -43,6 +43,38 @@
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
                     <div class="swiper-pagination swiper-pagination-v"></div>
+                </div>
+            </div> -->
+            <div class="swiper-slide page_bg1">
+                <div class="page1_content flex-align-content">
+                    <div class="img-box">
+                        <img src="./images/page_1_1.png" alt=""/>
+                    </div>
+                    <div class="con-text">
+                        <h3>按你所需 自由组合  </h3>
+                        <p>为你提供物有所值的<br/> 留学咨询服务</p>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-slide page_bg2">
+                <div class="page2_content flex-align-content">
+                    <div class="atlas img_box"></div>
+                    <div class="item l">
+                        <span class="atlas"></span>
+                        <p>独创8M单项服务</p>
+                    </div>
+                    <div class="item l_b">
+                        <span class="atlas"></span>
+                        <p>申请管理平台</p>
+                    </div>
+                    <div class="item r">
+                        <span class="atlas"></span>
+                        <p>独家选校系统</p>
+                    </div>
+                    <div class="item r_b">
+                        <span class="atlas"></span>
+                        <p>7年专注申请工作</p>
+                    </div>
                 </div>
             </div>
             <div class="swiper-slide page_bg3">
@@ -514,24 +546,24 @@ mounted: function(){
     console.log(this.clientHeight);
     
     setTimeout(() => {
-        var mySwiper = new Swiper('.swiper-container-2', {
-            allowTouchMove: true, //开启拖动
-            // pagination: '.swiper-pagination-h',
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            // direction: 'vertical', // 垂直切换选项
-            // autoHeight: true ,
-            // loop: true, // 循环模式选项
-            // slidesPerView: 1,
-            // mousewheel: true,
-            pagination: {
-                el: '.swiper-pagination-v',
-                // mousewheel: true,//鼠标滚轮控制
-                // clickable:true,
-            },
-        });
+        // var mySwiper = new Swiper('.swiper-container-2', {
+        //     allowTouchMove: true, //开启拖动
+        //     // pagination: '.swiper-pagination-h',
+        //     navigation: {
+        //         nextEl: '.swiper-button-next',
+        //         prevEl: '.swiper-button-prev',
+        //     },
+        //     // direction: 'vertical', // 垂直切换选项
+        //     // autoHeight: true ,
+        //     // loop: true, // 循环模式选项
+        //     // slidesPerView: 1,
+        //     // mousewheel: true,
+        //     pagination: {
+        //         el: '.swiper-pagination-v',
+        //         // mousewheel: true,//鼠标滚轮控制
+        //         // clickable:true,
+        //     },
+        // });
         var swiper = new Swiper('.swiper-container-w', {
             direction: 'vertical', // 垂直切换选项
             // autoHeight: true ,
