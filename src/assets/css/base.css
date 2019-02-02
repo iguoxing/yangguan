@@ -165,3 +165,94 @@ input[type="radio"] {
   background: #fff;
   transform: rotate(-45deg);
 }
+.header-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 12.05rem;
+}
+.header-title .logo {
+  display: flex;
+  padding-top: .3rem;
+  font-size: .36rem;
+}
+.header-title .logo img {
+  width: 1.46rem;
+  height: .4rem;
+}
+.header-title ul {
+  display: flex;
+  align-items: center;
+  padding-top: .3rem;
+  list-style: disc;
+}
+.header-title ul li {
+  display: inline;
+  font-weight: 300;
+}
+.header-title ul li a {
+  color: #fff;
+  font-size: .2rem;
+  text-decoration: none;
+}
+.header-title ul li a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  opacity: .8;
+}
+.header-title ul li.dot {
+  display: inline-block;
+  margin: 0 .3rem;
+  width: .04rem;
+  height: .04rem;
+  background: #fff;
+  transform: rotate(-45deg);
+}
+.header-title ul li.active a {
+  font-weight: 600;
+}
+.header-nav.second,
+html .header-nav.nav-scrolled {
+  height: .7rem;
+  background: #fff;
+  box-shadow: 0 0.125em 0.125em 0 rgba(0, 0, 0, 0.125);
+}
+.header-nav.second .header-title,
+html .header-nav.nav-scrolled .header-title {
+  height: .7rem;
+  color: #1a3a7e;
+}
+.header-nav.second .header-title .logo,
+html .header-nav.nav-scrolled .header-title .logo {
+  display: block;
+  width: 1.27rem;
+  height: .35rem;
+  padding-top: 0;
+  background-image: url(https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.header-nav.second .header-title ul,
+html .header-nav.nav-scrolled .header-title ul {
+  padding-top: 0;
+}
+.header-nav.second .header-title ul li a,
+html .header-nav.nav-scrolled .header-title ul li a {
+  color: #1a3a7e;
+}
+.header-nav.second .header-title ul li.dot,
+html .header-nav.nav-scrolled .header-title ul li.dot {
+  background: #1a3a7e;
+}
+html .header-nav.nav-scrolled {
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  z-index: 3000;
+}
+html .header-nav.nav-scrolled .header-title .logo {
+  background-position-y: 0;
+}

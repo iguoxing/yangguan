@@ -9,9 +9,17 @@
     <link rel="shortcut icon" href="https://admore-cas.oss-cn-hangzhou.aliyuncs.com/assets/img/favicon.png" mce_href="https://admore-cas.oss-cn-hangzhou.aliyuncs.com/duodian/assets/img/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/css/base.css">
     <link rel="stylesheet" href="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/css/swiper.min.css">
+    <script type="text/javascript" src="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/js/jquery/jquery-1.11.3.min.js"></script>
     <script type="text/javascript">
         document.documentElement.style.fontSize = document.documentElement.clientWidth / 1920*100 + 'px';
         // document.documentElement.style.fontSize='100px';
+        $(window).scroll(function() {
+        if ( $(window).scrollTop() > 70 ) {
+            $('#header-section').addClass('nav-scrolled');
+        } else {
+            $('#header-section').removeClass('nav-scrolled');
+        }
+    });
     </script>
 </head>
 

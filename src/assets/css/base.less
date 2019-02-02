@@ -103,3 +103,101 @@ input[type="radio"] {width: 16px;height: 16px;opacity: 0;}
     transform: rotate(-45deg);
   }
 }
+
+// 悬浮导航 start
+.header-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  width: 12.05rem;
+  .logo{
+    display: flex;
+    padding-top: .3rem;
+    font-size: .36rem;
+    img{
+      width: 1.46rem;
+      height: .4rem;
+    }
+  }
+  ul{
+    display: flex;
+    align-items: center;
+    padding-top: .3rem;
+    list-style: disc;
+    li{
+      display: inline;
+      font-weight: 300;
+      a{
+        color: #fff;
+        font-size: .2rem;
+        text-decoration: none;
+      }
+      a:hover{
+        text-decoration: underline;
+        cursor: pointer;
+        opacity: .8;
+      }
+      
+    }
+    li.dot{
+      display: inline-block;
+      margin: 0 .3rem;
+      width: .04rem;
+      height: .04rem;
+      background: #fff;
+      transform: rotate(-45deg);
+    }
+    li.active a{
+      font-weight: 600;
+    }
+  }
+}
+.header-nav.second,
+html .header-nav.nav-scrolled{
+  // margin-bottom: 1rem;
+  height: .7rem;
+  background: #fff;
+  box-shadow: 0 0.125em 0.125em 0 rgba(0,0,0,.125);
+  .header-title{
+    height: .7rem;
+    color: #1a3a7e;
+    .logo{
+      display: block;
+      // margin-top: .3rem;
+      width: 1.27rem;
+      height: .35rem;
+      padding-top: 0;
+      background-image: url(https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.png);
+      background-size: contain;
+      background-repeat: no-repeat;
+      }
+    ul{
+      padding-top: 0;
+      li{
+        a{
+          color: #1a3a7e;
+        }
+      }
+      li.dot{
+        background: #1a3a7e;
+      }
+    }
+  }
+}
+
+html .header-nav.nav-scrolled{
+  position: fixed!important;
+  top: 0;
+  left: 0;
+  margin-left: 0;
+  width: 100%;
+  z-index: 3000;
+  .header-title{
+    .logo{
+      background-position-y: 0;
+    }
+  }
+}
+
+// 悬浮导航 end

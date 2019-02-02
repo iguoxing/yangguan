@@ -510,8 +510,8 @@
                 <div class="tinybox">
                     <div class="Elastic-title">温馨提示</div>
                     <div class="innerbox">
-                        <img src="./images/gh_86826c15544c_860.jpg" style="width:300px;height:300px" alt=""/>
-                        <p class="tips">请打开微信扫一扫加为好友</p>
+                        <img src="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/service/code.jpg" style="width:300px;height:300px" alt=""/>
+                        <p class="tips">请打开微信扫一扫关注公众号</p>
                     </div>
                     <!-- <span class="ns-close" v-if="!close" @click="closeElastic"></span> -->
                     <!-- <slot name="innerbox"></slot> -->

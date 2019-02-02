@@ -12,9 +12,8 @@ export default new Router({
     routes: [
         {path: '/',component: HomeIndex,alias:"/home"},
         {path: '/feature',component: FeatureProject},
-        // {path: '/feature',component: FeatureProject},
-        {path: '/StudyApplication',component: StudyApplication},
-        {path: '/uniqueService',component: uniqueService},
+        {path: '/study',component: StudyApplication},
+        {path: '/service',component: uniqueService},
         {path: '*',component: HomeIndex},
         
     ]

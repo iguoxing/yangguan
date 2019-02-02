@@ -1,15 +1,13 @@
 <template>
-<div class="header-nav first">
+<div class="header-nav first" id="header-section">
   <div class="header-title">
-    <a class="logo" href="/">
-      <img src="https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.svg">
-    </a>
+    <a class="logo" href="/"></a>
     <ul>
       <li class="active"><a href="/">首页</a></li>
       <li class="dot"></li>
-      <li><a href="/StudyApplication">留学申请</a></li>
+      <li><a href="/study">留学申请</a></li>
       <li class="dot"></li>
-      <li><a href="/uniqueService">单项服务</a></li>
+      <li><a href="/service">单项服务</a></li>
       <li class="dot"></li>
       <li><a href="/feature">特色项目</a></li>
     </ul>
@@ -39,7 +37,7 @@ ul{
     ul{
       display: flex;
       align-items: center;
-      padding-top: .3rem;
+      // padding-top: .3rem;
       list-style: disc;
       li{
         display: inline;
@@ -70,7 +68,7 @@ ul{
     }
   }
   .header-nav{
-    margin-bottom: 1rem;
+    // margin-bottom: 1rem;
     height: .7rem;
     background: transparent;
     box-shadow: none;
@@ -92,6 +90,17 @@ ul{
     margin-bottom: 0;
     margin-left: -6rem;
     z-index: 9;
+    .header-title{
+      .logo{
+        display: block;
+        width: 1.27rem;
+        height: .35rem;
+        background-image: url(https://guanyang.oss-cn-beijing.aliyuncs.com/assets/img/common/logo.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position-y: .3rem;
+      }
+    }
   }
   
 

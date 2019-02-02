@@ -32,10 +32,11 @@
 <style lang="less">
 .index-feature{
     .index-title{
-        color: #1a3a7e;
-        .dot{
-        background: #1a3a7e;
-        }
+      margin-top: .8rem;
+      color: #1a3a7e;
+      .dot{
+      background: #1a3a7e;
+      }
     }
     .feature-list{
         display: flex;
